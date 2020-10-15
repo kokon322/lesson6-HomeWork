@@ -1,0 +1,25 @@
+<form  [formGroup]="form" >
+  <select formControlName="choice">
+    <option *ngFor="let user of allUsers" [value]="user.id" >
+      {{user.name}} </option>
+  </select>
+  <button  (click)="getUser(form)">all about user</button>
+</form>
+
+<div *ngFor="let x of aboutUser">
+{{x.id}} - {{x.name}} - {{x.email}}<button (click)="postOfUser(form)">post of users</button>
+</div>
+
+<hr>
+
+<form  [formGroup]="form" >
+  <select formControlName="choice">
+    <option *ngFor="let posts of allPostOfUser" [value]="posts.id">{{posts.userId}}-{{posts.title}}</option>
+  </select>
+  <button (click)="getPost(form)">all about post</button>
+</form>
+
+<div *ngFor="let y of post">
+  {{y.id}} - {{y.title}}
+</div>
+<hr>

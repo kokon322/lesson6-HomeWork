@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lesson6-HomeWork"
+    }
+  },
+  "defaultProject": "lesson6-HomeWork",
+  "cli": {
+    "analytics": "02d9f31d-c3ca-47aa-98a7-cc35ffa5b041"
+  }
 }
